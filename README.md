@@ -17,7 +17,7 @@ C’est un module ou un dictionnaire qui a des fonctionnalités pour le traiteme
 import csv
 ```
 Il va falloir mettre Import jso et télécharger json :
- C’est dictionnaire
+ C’est dictionnaire ou module qui fournit des méthodes pour traiter du json
 ```py
 import json
 ```
