@@ -42,7 +42,7 @@ for commune in communes:
     populations.append(commune["population"])
     
 #La ligne with open, write, write. writerow et for ville…. : 
-#La première ligne va créer un fichier en csv, la seconde ligne paramètre la méthode d’écriture dans le fichier csv  la ligne trois va écrire les  en tête  ville : []…… vu plus haut , puis la dernière ligne va boucler les tableaux créer auparavant et les écrire ligne par ligne dans le fichier csv
+#La première ligne va créer un fichier en csv, la seconde ligne va paramètre la méthode d’écriture dans le fichier csv  la ligne trois va écrire les  en tête  ville : []…… vu plus haut , puis la dernière ligne va boucler les tableaux créer auparavant et les écrire ligne par ligne dans le fichier csv
 en_tete = ["ville", "code", "codeDepartement", "codeRegion", "codesPostaux", "Population" ]
 with open('communes.csv', 'w') as fichier_csv:
     writer = csv.writer(fichier_csv, delimiter=';', lineterminator='\n')
