@@ -61,7 +61,7 @@ with open('communes.csv', 'w') as fichier_csv:
         writer.writerow([ville, code, codeDepartment, codeRegion,codePostal[0], population])
 ```
 ```py
-Explication sur l’exécution du script![image](https://user-images.githubusercontent.com/92336484/138939612-bb690785-6886-4fb4-b15f-66a2983b19a7.png)
+Explication sur l’exécution du script
 ```
 ```py
 Il va falloir créer un fichier .bat et dedans on devra renseigner le chemin ou ce trouver python et ou ce trouve le script:
