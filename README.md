@@ -60,6 +60,27 @@ with open('communes.csv', 'w') as fichier_csv:
     for ville, code, codeDepartment, codeRegion, codePostal, population in zip(villes, codes, codeDepartments, codeRegions, codesPostaux, populations  ):
         writer.writerow([ville, code, codeDepartment, codeRegion,codePostal[0], population])
 ```
-
-
-
+```py
+Explication sur l’exécution du script![image](https://user-images.githubusercontent.com/92336484/138939612-bb690785-6886-4fb4-b15f-66a2983b19a7.png)
+```
+```py
+Il va falloir créer un fichier .bat et dedans on devra renseigner le chemin ou ce trouver python et ou ce trouve le script:
+```
+![1](https://user-images.githubusercontent.com/92336484/138939133-f17785ff-f850-439e-926e-a62e29946ef1.png)
+```py
+On va aller sur planificateur de tâche, puis créer une nouvelle tâche
+Il faudra donner un nom a la tâche que l’on souhaite
+```
+```py
+Puis on va aller sur déclencheur, en bas à nouveau, renseigner ce que l’on souhaite mettre comme un fois etc…, le heure de démarrage,  on mettra le repetatage que l’on souhaite
+```
+![2](https://user-images.githubusercontent.com/92336484/138940043-9b75aebe-3c26-4a63-becc-b184c184231a.png)
+```py
+Aller dans action, puis nouveau, programme/script renseigner le chemin de PowerShell, dans ajouter un arguments renseigner le chemin du script exemple getcommunen.bat, dans commencer renseigner le chemin dans lequel ce trouve script et en terminant par \ 
+```
+![3](https://user-images.githubusercontent.com/92336484/138940274-24e7e1c4-6c38-4ba0-91cf-fd4f69845ab1.png)
+![4](https://user-images.githubusercontent.com/92336484/138940402-c42ee428-2440-4807-9df7-07e3a6e4e003.png)
+```py
+Dans les conditions il faudra décochez ne démarrer la tâche arrêtera l’ordinateur passe en alimentation par batterie que si l’ordinateur est relié au secteur.
+```
+![image](https://user-images.githubusercontent.com/92336484/138941041-4b878506-6ac0-4d23-b609-909d7314bebc.png)
