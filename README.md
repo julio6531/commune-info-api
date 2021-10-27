@@ -1,5 +1,6 @@
 # commune-info-api
-Ce programme a pour but de récupérer des informations sur le site du gouvernement pour le département du 64(Pyrénées-Atlantiques)
+Ce programme a pour but de récupérer des informations sur le site du gouvernement pour le département du 64(Pyrénées-Atlantiques),les nom des communes, le code, code régions, code département, code postaux, chiffre de population des différentes ville.
+
 
 Nom de l’auteur : Julien LAULHE
 Date : 20/10/2021
