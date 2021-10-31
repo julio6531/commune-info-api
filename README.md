@@ -7,7 +7,7 @@ Date : 20/10/2021
 Version : 1
 
 Il va falloir mettre import requests et télécharger requests : 
-C’est un dictionnaire ou un modèle qui permettra d’envoyer des requêtes http et https
+C’est un dictionnaire ou un modèle qui permet d’envoyer des requêtes http et https
 ```py
 import requests
 ```
@@ -65,24 +65,21 @@ with open('communes.csv', 'w') as fichier_csv:
 Explication sur l’exécution du script
 ```
 ```py
-Il va falloir créer un fichier .bat et dedans on devra renseigner le chemin ou ce trouver python et ou ce trouve le script:
+ créer un fichier .bat et dedans on devra renseigner le chemin ou ce trouver python et ou ce trouve le script: et donner un nom à la tâche
 ```
 ![1](https://user-images.githubusercontent.com/92336484/138939133-f17785ff-f850-439e-926e-a62e29946ef1.png)
-```py
-On va aller sur planificateur de tâche, puis créer une nouvelle tâche
-Il faudra donner un nom a la tâche que l’on souhaite
 ```
 ```py
-Puis on va aller sur déclencheur, en bas à nouveau, renseigner ce que l’on souhaite mettre comme un fois etc…, le heure de démarrage,  on mettra le repetatage que l’on souhaite
+Aller sur déclencheur, mettre le choix une fois etc…, le heure de démarrage et répétition de la tâche
 ```
 ![2](https://user-images.githubusercontent.com/92336484/138940043-9b75aebe-3c26-4a63-becc-b184c184231a.png)
 ```py
-Aller dans action, puis nouveau, programme/script renseigner le chemin de PowerShell, dans ajouter un arguments renseigner le chemin du script exemple getcommunen.bat, dans commencer renseigner le chemin dans lequel ce trouve script et en terminant par \ 
+Aller dans action,  programme/script mettre le chemin de PowerShell,  ajouter un argument  le chemin du script exemple getcommunen.bat, commencer  le chemin dans lequel ce trouve script et en terminant par \ 
 ```
 ![3](https://user-images.githubusercontent.com/92336484/138940274-24e7e1c4-6c38-4ba0-91cf-fd4f69845ab1.png)
 ![4](https://user-images.githubusercontent.com/92336484/138940402-c42ee428-2440-4807-9df7-07e3a6e4e003.png)
 ```py
-Dans les conditions il faudra décochez ne démarrer la tâche arrêtera l’ordinateur passe en alimentation par batterie que si l’ordinateur est relié au secteur.
+Dans les conditions il faudra décochez la tâche si  l’ordinateur est sur batterie et décochez que si l’ordinateur est relié au secteur.
 ```
 ![5](https://user-images.githubusercontent.com/92336484/138940968-5025ff40-0e05-4f25-ac34-9faab6f02e21.png)
 
